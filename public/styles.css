@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    background-color: dodgerblue;
+    color: aliceblue;
+    
+    
+}
+h2 {
+    color: green;
+    font-size: x-large;
+    text-align: center;
+    
+}
+h3{
+    text-align: center;
+}
+a:link, a:visited {
+    background-color: #04a848;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: dodgerblue;
+  }
+  h4 {
+    text-align: center;
+  }

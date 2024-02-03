@@ -1,0 +1,13 @@
+html
+  head
+    title Appointments
+    link(rel='stylesheet', href='/styles.css')  
+
+  body
+    h1 Appointments
+    ul
+      each appointment in appointments
+        li
+          strong Appointment ID: #{appointment.AppointmentID}
+          |  - Date: #{appointment.appointmentdate}, Status: #{appointment.status}
+          |  - Patient ID: #{appointment.patientid}, Doctor ID: #{appointment.doctorid}

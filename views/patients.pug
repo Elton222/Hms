@@ -1,0 +1,38 @@
+
+
+html
+  head
+    title Patients
+    link(rel='stylesheet', href='/styles.css')  
+
+  body
+    h1 Patients
+    form(action='/patients', method='POST')
+      label(for='firstname') First Name:
+      input(type='text', name='firstname', required)
+      label(for='lastname') Last Name:
+      input(type='text', name='lastname', required)
+      label(for='birthdate') Birthdate:
+      input(type='date', name='birthdate')
+      label(for='gender') Gender:
+      select(name='gender')
+        option(value='Male') Male
+        option(value='Female') Female
+        option(value='Other') Other
+      label(for='contactnumber') Contact Number:
+      input(type='text', name='contactnumber', required)
+      button(type='submit') Add Patient
+    table
+      tr
+        th First Name
+        th Last Name
+        th Birthdate
+        th Gender
+        th Contact Number
+      each patient in patients
+        tr
+          td #{patient.firstname}
+          td #{patient.lastname}
+          td #{patient.birthdate}
+          td #{patient.gender}
+          td #{patient.contactnumber}

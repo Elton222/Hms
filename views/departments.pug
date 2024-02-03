@@ -1,0 +1,11 @@
+html
+  head
+    title Departments
+    link(rel='stylesheet', href='/styles.css')  
+
+  body
+    h1 Departments
+    ul
+      each department in departments
+        li
+          strong #{department.departmentname}
